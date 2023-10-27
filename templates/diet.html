@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Diet</title>
+</head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;1,400&display=swap" rel="stylesheet">
+
+<style>
+    body{
+        background-image: url("https://img.freepik.com/premium-photo/high-angle-view-measuring-tape-near-organic-vegetables-fruits-white-background_23-2148193124.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        height:100vh;
+        object-fit: cover;
+        box-sizing: border-box;
+
+    }
+    .mainAgeDiv{
+        display:flex;
+        justify-content:right;
+    }
+    .subAgeDiv{
+       display:flex;
+        flex-direction: column;
+        padding: 100px 300px 0 0;
+        gap:14px;
+    }
+    .submitBtn{
+        padding:10px;
+        cursor:pointer;
+        font-family:poppins;
+        border-radius:5px;
+        border:1px solid black;
+    }
+    .submitBtn:hover{
+        color:white;
+        background: black;
+    }
+    .submitBtn1{
+        padding:12px;
+          cursor:pointer;
+        font-family:poppins;
+         border-radius:5px;
+        border:1px solid black;
+    }
+
+    .submitBtn1:hover{
+        color:white;
+        background: black;
+    }
+</style>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+<body>
+<div class="mainAgeDiv">
+    <div class="subAgeDiv">
+        <h1>Click Here</h1>
+        <form action="twofive">
+             <input class="submitBtn" type="submit" value="Below 25 years">
+        </form>
+        <form action="above25">
+           <input class="submitBtn1" type="submit" value="25 to 50 years">
+        </form>
+        <form action="above50">
+            <input class="submitBtn" type="submit" value="Above 50 years">
+        </form>
+        <p><strong>Note</strong>:Click on the correct age of yours.</p>
+    </div>
+
+
+
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>

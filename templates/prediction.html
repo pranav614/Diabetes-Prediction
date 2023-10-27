@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Prediction</title>
+    <style>
+        body{
+            background-image: url("https://www.cdc.gov/diabetes/images/library/spotlights/diabetes-stats-report-724px.png?_=42420");
+            background-size: cover;
+            background-position: center center;
+            background-repeat: no-repeat;
+            height: 100vh;
+            object-fit:fill;
+            box-sizing: border-box;
+        }
+        h1{
+            text-align:center;
+            font-family: Serif;
+        }
+        .mainColumn{
+            display: flex;
+            justify-content: right;
+
+
+        }
+        .subClass{
+            width:50%;
+            /*border:1px solid black;*/
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            gap:30px;
+        }
+        form table{
+            display:flex;
+            justify-content: center;
+
+        }
+        .submit1:hover{
+            background: black;
+            color:white;
+        }
+        table tr{
+            height:30px;
+            font-family: poppins;
+        }
+       .inputResult{
+           display:flex;
+           width:100%;
+           justify-content: center;
+           margin-top:30px;
+       }
+       .result1{
+           display:flex;
+           width:100%;
+           justify-content: center;
+       }
+       .submit1{
+           padding:7px 15px;
+           cursor:pointer;
+       }
+
+    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;1,400&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap" rel="stylesheet">
+</head>
+<body>
+<div>
+    <div class="mainColumn">
+        <div class="subClass">
+            <div><h1>Let's Predict </h1></div>
+            <div>
+                <form action="result">
+                <table>
+                    <tr>
+                        <td class="textAlignRight">Pregnancies:</td>
+                        <td class="textAlignLeft"><input type="text" name="l1"></td>
+                    </tr>
+                     <tr>
+                        <td class="textAlignRight">Glucose:</td>
+                        <td class="textAlignLeft"><input type="text" name="l2"></td>
+                    </tr>
+                     <tr>
+                        <td class="textAlignRight">Blood Pressure:</td>
+                        <td class="textAlignLeft"><input type="text" name="l3"></td>
+                    </tr>
+                     <tr>
+                        <td class="textAlignRight">Skin Thickness:</td>
+                        <td class="textAlignLeft"><input type="text" name="l4"></td>
+                    </tr>
+                     <tr>
+                        <td class="textAlignRight">Insulin:</td>
+                        <td class="textAlignLeft"><input type="text" name="l5"></td>
+                    </tr>
+                     <tr>
+                        <td class="textAlignRight">BMI(Body Mass Index):</td>
+                        <td class="textAlignLeft"><input type="text" name="l6"></td>
+                    </tr>
+                     <tr>
+                        <td class="textAlignRight">Diabetes Pedigree Function:</td>
+                        <td class="textAlignLeft"><input type="text" name="l7"></td>
+                    </tr>
+                     <tr>
+                        <td class="textAlignRight">Age:</td>
+                        <td class="textAlignLeft"><input type="text" name="l8"></td>
+                    </tr>
+                </table>
+                <div class="inputResult"><input class="submit1" type="submit"></div>
+
+            </form>
+            </div>
+
+            <div class="result1">Result:{{result2}}</div>
+        </div>
+
+
+    </div>
+</div>
+
+</body>
+</html>
